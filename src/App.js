@@ -12,20 +12,26 @@ import {
 import Gallery from './components/Gallery/Gallery';
 import Services from './components/Services/Services';
 import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
     <div className="App">
       
       <Router>
-          <Routes>
+      
+          <Routes>         
             <Route path="/" element={<Home />} />
+          
             <Route path="/about" element={<About />} />
             <Route path="/gallery" element={<Gallery/>} />
             <Route path="/services" element={<Services/>} />
             <Route path="/contact" element={<Contact/>} />
           </Routes>
+          
+          <Footer/>
         </Router>
+        
     </div>
   );
 }
